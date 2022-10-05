@@ -6,7 +6,6 @@ var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
-var fileinclude = require('gulp-file-include');
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -123,14 +122,4 @@ gulp.task('dev', ['browserSync', 'sass', 'minify-css', 'minify-js'], function() 
   // Reloads the browser whenever HTML or JS files change
   gulp.watch('*.html', browserSync.reload);
   gulp.watch('js/**/*.js', browserSync.reload);
-});
-
-// Plugin for file includes
-gulp.task('fileinclude', function() {
-  gulp.src(['index.html'])
-    .pipe(fileinclude({
-      prefix: '@@',
-      basepath: '@file'
-    }))
-    .pipe(gulp.dest('./'));
 });
