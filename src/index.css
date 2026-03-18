@@ -389,6 +389,14 @@ ul { list-style: none; }
   color: var(--text-body);
 }
 
+.about__text p {
+  margin-bottom: 1.2rem;
+}
+
+.about__text p:last-child {
+  margin-bottom: 0;
+}
+
 .about__text strong {
   color: var(--accent-gold);
   font-weight: 600;
@@ -479,6 +487,7 @@ ul { list-style: none; }
   font-size: 0.92rem;
   color: var(--text-muted);
   line-height: 1.7;
+  white-space: pre-line;
 }
 
 .timeline__tags {
@@ -560,6 +569,13 @@ ul { list-style: none; }
   transition: color .25s, gap .25s;
 }
 
+.research-card__description {
+  font-size: 0.95rem;
+  color: var(--text-body);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
 .research-card__link:hover {
   color: var(--accent-gold);
   gap: 0.7rem;
@@ -625,6 +641,56 @@ ul { list-style: none; }
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-top: 1.2rem;
+}
+
+/* ── Forte / How I Work ──────────────────────── */
+.forte-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.forte-card {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.forte-card__icon {
+  color: var(--accent-cyan);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(126, 203, 207, 0.08);
+  border: 1px solid rgba(126, 203, 207, 0.15);
+  margin-bottom: 0.4rem;
+}
+
+.forte-card__title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--accent-gold);
+  font-weight: 600;
+}
+
+.forte-card__desc {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* ── Contact Note ────────────────────────────── */
+.contact-note {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--accent-cyan);
+  margin-bottom: 2rem;
+  letter-spacing: 0.02em;
 }
 
 /* ── Constellation Map ────────────────────────── */
@@ -787,6 +853,10 @@ ul { list-style: none; }
   }
 
   .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .forte-grid {
     grid-template-columns: 1fr;
   }
 

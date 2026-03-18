@@ -1,43 +1,64 @@
 import { useEffect, useRef, useState, useCallback } from 'react'
 import ScrollReveal from './ScrollReveal'
 
-/* ── Skill constellation data ────────────────── */
+/* -- Skill constellation data ---- */
 const CONSTELLATIONS = [
   {
     name: 'Quantum Array',
     color: '#7ecbcf',
     skills: [
-      { label: 'PennyLane',              x: 0.18, y: 0.28, r: 5, bridge: false },
-      { label: 'Qiskit',                 x: 0.28, y: 0.18, r: 5, bridge: false },
-      { label: 'AWS Braket',             x: 0.12, y: 0.45, r: 4.5, bridge: false },
-      { label: 'Quantum Algorithms',     x: 0.30, y: 0.38, r: 5.5, bridge: false },
-      { label: 'Quantum Error Correction', x: 0.22, y: 0.55, r: 4, bridge: false },
-      { label: 'Python',                 x: 0.40, y: 0.48, r: 6, bridge: true },
+      { label: 'PennyLane',              x: 0.10, y: 0.18, r: 5, bridge: false },
+      { label: 'Qiskit',                 x: 0.22, y: 0.12, r: 5, bridge: false },
+      { label: 'AWS Braket',             x: 0.06, y: 0.35, r: 4.5, bridge: false },
+      { label: 'Quantum Algorithms',     x: 0.24, y: 0.30, r: 5.5, bridge: false },
+      { label: 'Quantum Error Correction', x: 0.14, y: 0.46, r: 4, bridge: false },
+      { label: 'OpenQASM',               x: 0.34, y: 0.22, r: 4.5, bridge: true },
+      { label: 'PySCF',                  x: 0.18, y: 0.58, r: 3.5, bridge: false },
+      { label: 'OpenFermion',            x: 0.08, y: 0.55, r: 3.5, bridge: false },
+      { label: 'mitiq',                  x: 0.26, y: 0.50, r: 3.5, bridge: false },
+      { label: 'Circuit Knitting',       x: 0.30, y: 0.40, r: 3.5, bridge: false },
+      { label: 'ADAPT-VQE',             x: 0.16, y: 0.32, r: 4, bridge: false },
+      { label: "Grover's Algorithm",     x: 0.32, y: 0.12, r: 3.5, bridge: false },
+      { label: 'Python',                 x: 0.38, y: 0.38, r: 6, bridge: true },
     ],
-    edges: [[0,1],[0,2],[0,3],[1,3],[2,4],[3,4],[3,5]],
+    edges: [[0,1],[0,2],[0,3],[1,3],[2,4],[3,4],[3,12],[5,1],[5,3],[6,7],[6,8],[4,8],[9,3],[10,0],[10,3],[11,1],[9,12]],
   },
   {
-    name: 'Circuit Nebula',
+    name: 'Lab & Hardware',
     color: '#e8d5a3',
     skills: [
-      { label: 'IoT',               x: 0.62, y: 0.20, r: 5, bridge: false },
-      { label: 'Embedded Systems',   x: 0.72, y: 0.30, r: 4.5, bridge: false },
-      { label: 'Digital Logic',      x: 0.58, y: 0.38, r: 4, bridge: false },
-      { label: 'IR/Ultrasonic Sensors', x: 0.78, y: 0.15, r: 3.5, bridge: false },
+      { label: 'Arduino',              x: 0.62, y: 0.12, r: 4, bridge: false },
+      { label: 'Raspberry Pi',         x: 0.72, y: 0.08, r: 3.5, bridge: false },
+      { label: 'RIE',                  x: 0.58, y: 0.26, r: 4.5, bridge: false },
+      { label: 'Profilometry',         x: 0.74, y: 0.22, r: 3.5, bridge: false },
+      { label: 'GaAs Fabrication',     x: 0.66, y: 0.34, r: 4, bridge: false },
+      { label: 'Optical Microscopy',   x: 0.80, y: 0.32, r: 3.5, bridge: false },
+      { label: 'Quantum Dots',         x: 0.68, y: 0.46, r: 4, bridge: false },
+      { label: 'Linux/Unix',           x: 0.52, y: 0.42, r: 4, bridge: true },
     ],
-    edges: [[0,1],[0,2],[1,2],[1,3],[0,3]],
+    edges: [[0,1],[0,2],[2,3],[2,4],[3,5],[4,5],[4,6],[2,6],[7,0],[7,2]],
   },
   {
     name: 'Code Stream',
     color: '#c47a9b',
     skills: [
-      { label: 'Python',   x: 0.40, y: 0.48, r: 6, bridge: true },
-      { label: 'Java',     x: 0.52, y: 0.65, r: 5, bridge: false },
-      { label: 'Git',      x: 0.38, y: 0.75, r: 4, bridge: false },
-      { label: 'SQL',      x: 0.62, y: 0.78, r: 4.5, bridge: false },
-      { label: 'Django',   x: 0.48, y: 0.85, r: 4, bridge: false },
+      { label: 'Python',       x: 0.38, y: 0.38, r: 6, bridge: true },
+      { label: 'Java',         x: 0.48, y: 0.58, r: 5, bridge: false },
+      { label: 'Git',          x: 0.36, y: 0.70, r: 4, bridge: false },
+      { label: 'SQL',          x: 0.58, y: 0.68, r: 4.5, bridge: false },
+      { label: 'Django',       x: 0.44, y: 0.80, r: 4, bridge: false },
+      { label: 'OpenQASM',     x: 0.34, y: 0.22, r: 4.5, bridge: true },
+      { label: 'Linux/Unix',   x: 0.52, y: 0.42, r: 4, bridge: true },
+      { label: 'C/C++',        x: 0.62, y: 0.56, r: 4, bridge: false },
+      { label: 'ARM Assembly', x: 0.72, y: 0.62, r: 3.5, bridge: false },
+      { label: 'MySQL',        x: 0.66, y: 0.76, r: 3.5, bridge: false },
+      { label: 'SOAP/XML',     x: 0.54, y: 0.82, r: 3.5, bridge: false },
+      { label: 'Postman',      x: 0.38, y: 0.88, r: 3, bridge: false },
+      { label: 'Perforce',     x: 0.28, y: 0.82, r: 3, bridge: false },
+      { label: 'MATLAB',       x: 0.76, y: 0.50, r: 3.5, bridge: false },
+      { label: 'Neo4j',        x: 0.50, y: 0.90, r: 3.5, bridge: false },
     ],
-    edges: [[0,1],[0,2],[1,3],[1,4],[2,4],[3,4]],
+    edges: [[0,1],[0,2],[1,3],[1,4],[2,4],[3,4],[5,0],[6,1],[7,1],[7,8],[3,9],[1,10],[2,12],[4,11],[4,14],[7,13],[9,3],[10,4]],
   },
 ]
 
@@ -46,17 +67,17 @@ const SKILL_GROUPS = [
   {
     title: 'Quantum Array',
     cls: 'skill-chip--quantum',
-    skills: ['PennyLane', 'Qiskit', 'AWS Braket', 'Quantum Algorithms', 'Quantum Error Correction'],
+    skills: ['PennyLane', 'Qiskit', 'AWS Braket', 'Quantum Algorithms', 'Quantum Error Correction', 'OpenQASM', 'PySCF', 'OpenFermion', 'mitiq', 'Circuit Knitting', 'ADAPT-VQE', "Grover's Algorithm"],
   },
   {
-    title: 'Circuit Nebula',
+    title: 'Lab & Hardware',
     cls: 'skill-chip--hardware',
-    skills: ['IoT', 'Embedded Systems', 'IR/Ultrasonic Sensors', 'Digital Logic'],
+    skills: ['Arduino', 'Raspberry Pi', 'RIE', 'Profilometry', 'GaAs Fabrication', 'Optical Microscopy', 'Quantum Dots'],
   },
   {
     title: 'Code Stream',
     cls: 'skill-chip--code',
-    skills: ['Python', 'Java', 'Git', 'SQL', 'Django'],
+    skills: ['Python', 'Java', 'C/C++', 'ARM Assembly', 'Git', 'SQL', 'MySQL', 'Django', 'SOAP/XML', 'Postman', 'Perforce', 'MATLAB', 'Neo4j', 'Linux/Unix'],
   },
 ]
 
@@ -92,6 +113,7 @@ export default function ConstellationMap() {
 
       // Draw constellation lines
       for (const [a, b] of constellation.edges) {
+        if (!skills[a] || !skills[b]) continue
         const sA = skills[a], sB = skills[b]
         const x1 = sA.x * w, y1 = sA.y * h
         const x2 = sB.x * w, y2 = sB.y * h

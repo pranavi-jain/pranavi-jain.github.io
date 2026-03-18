@@ -2,27 +2,35 @@ import ScrollReveal from './ScrollReveal'
 
 const PROJECTS = [
   {
-    title: 'Post-Quantum Digital Signatures for IoV',
-    desc: 'Researched and implemented post-quantum cryptographic signature schemes within the IOTA distributed ledger to reduce transaction latency in Internet of Vehicles environments. Published at IEEE IBT 2022.',
-    badge: 'IEEE Published',
-    badgeClass: 'project-card__badge--published',
-    tags: ['Quantum Cryptography', 'IOTA', 'IoV', 'Python'],
-    link: 'https://ieeexplore.ieee.org/document/9807757',
-  },
-  {
-    title: 'Queue Data Analytics — Cisco Meraki MV Sense 12',
-    desc: 'Built an intelligent queue-analytics system using Cisco Meraki MV Sense 12 cameras for real-time crowd monitoring and prediction. Winner of the Smart India Hackathon 2019, a nationwide competition.',
-    badge: '🏆 SIH 2019 Winner',
-    badgeClass: 'project-card__badge--winner',
-    tags: ['IoT', 'Python', 'Computer Vision', 'Analytics'],
+    title: 'Benchmarking Quantum Computers: Grover\'s Algorithm Across Hardware',
+    desc: 'An empirical benchmarking study running Grover\'s search algorithm on four different quantum hardware and simulator platforms — IBM via Qiskit, IonQ, IQM, and Rigetti via AWS Braket. The project analyzes how each backend\'s transpiler handles gate decomposition, qubit routing, and circuit optimization differently, and compares actual performance against theoretical expectations. This is the kind of cross-platform, hardware-aware benchmarking that sits right on the boundary between algorithm research and compilation engineering.',
+    badge: 'Quantum Benchmarking',
+    badgeClass: 'project-card__badge--progress',
+    tags: ['Qiskit', 'AWS Braket', 'IonQ', 'IQM', "Grover's Algorithm", 'Benchmarking'],
     link: null,
   },
   {
-    title: 'Quantum Computing Research Project',
-    desc: 'Ongoing research exploring advanced quantum algorithms and error-mitigation strategies for near-term quantum hardware. Further details will be shared upon publication.',
-    badge: 'In Progress',
+    title: 'Zero-Noise Extrapolation for Quantum Error Mitigation',
+    desc: 'A deep-dive review of the Zero-Noise Extrapolation (ZNE) technique — one of the most practical near-term approaches to reducing the effects of noise in quantum circuits without full fault tolerance. The project surveys ZNE fundamentals and its various modifications, then implements a working demonstration using Qiskit with the mitiq error mitigation package. A practical study of the tradeoffs between circuit accuracy and computational overhead in NISQ-era devices.',
+    badge: 'Error Mitigation',
     badgeClass: 'project-card__badge--progress',
-    tags: ['PennyLane', 'Qiskit', 'Quantum Algorithms'],
+    tags: ['Qiskit', 'mitiq', 'ZNE', 'Error Mitigation', 'NISQ'],
+    link: null,
+  },
+  {
+    title: 'Two-Qubit Entanglement Dynamics on IBM Quantum Systems',
+    desc: 'An experimental study of entanglement dynamics on real IBM quantum processors. The project simulates the Nakajima-Zwanzig and Time-Convolutionless (TCL) master equations to characterize how two-qubit entanglement evolves under realistic decoherence conditions — bridging open quantum systems theory with experimental hardware behavior.',
+    badge: 'Quantum Hardware',
+    badgeClass: 'project-card__badge--published',
+    tags: ['IBM Quantum', 'Qiskit', 'Entanglement', 'Open Quantum Systems', 'TCL'],
+    link: null,
+  },
+  {
+    title: 'Hybrid Quantum Networks for End-to-End Qubit State Transfer',
+    desc: 'A theoretical investigation into integrating Fluxonium qubits with piezoelectric membranes for optical transduction of quantum states. The goal is seamless transfer of quantum information across hybrid quantum network nodes without loss — a key challenge for the future quantum internet. This project sits at the intersection of superconducting qubit architecture, quantum transduction, and network theory.',
+    badge: 'Quantum Networks',
+    badgeClass: 'project-card__badge--winner',
+    tags: ['Fluxonium', 'Quantum Transduction', 'Quantum Networks', 'Piezoelectric'],
     link: null,
   },
 ]
@@ -32,8 +40,8 @@ export default function Projects() {
     <section className="section" id="projects">
       <div className="container">
         <ScrollReveal>
-          <h2 className="section-title">Projects</h2>
-          <p className="section-subtitle">// things I've built</p>
+          <h2 className="section-title">Academic Projects</h2>
+          <p className="section-subtitle">// research-driven explorations</p>
         </ScrollReveal>
 
         <div className="projects-grid">

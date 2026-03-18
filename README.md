@@ -1,9 +1,31 @@
-# Resume | GitHub Pages
+# Pranavi Jain — Portfolio
 
-[Resume](https://startbootstrap.com/template-overviews/resume/) is a resume and CV theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+Personal portfolio website for Pranavi Jain, Quantum Software Engineer.
 
-This OpenSource code has been employed to create a customised [personal resume](https://pranavi-jain.github.io/).
+**Live:** [pranavi-jain.github.io](https://pranavi-jain.github.io/)
 
-## Copyright and License
+## Tech Stack
 
-Copyright 2013-2017 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-resume/blob/gh-pages/LICENSE) license.
+- React 19 + Vite
+- Custom CSS (glass-morphism, constellation skill map)
+- GitHub Pages (via `gh-pages`)
+
+## Sections
+
+- About
+- Experience 
+- Education
+- Research & Publications (IEEE ICIBT 2022)
+- Academic Projects
+- How I Work (personal strengths)
+- Skills (interactive constellation map)
+- Contact
+
+## Development
+
+```bash
+npm install
+npm run dev       # local dev server
+npm run build     # production build
+npm run deploy    # deploy to GitHub Pages
+```

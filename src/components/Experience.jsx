@@ -4,25 +4,37 @@ const JOBS = [
   {
     role: 'Quantum Software Engineer',
     company: 'NeoQuortex — College Park, MD',
-    date: '2025 – Present',
-    desc: 'Developing quantum software solutions, building quantum circuit simulations, and contributing to research in quantum algorithms and error correction for near-term quantum devices.',
-    tags: ['PennyLane', 'Qiskit', 'AWS Braket', 'Python', 'Quantum Algorithms'],
+    date: 'Jun 2025 – Present',
+    desc: `At NeoQuortex I architect and maintain a modular Python framework for hybrid quantum-classical experiments. The framework is built around clear abstraction layers — separating circuit construction, transformation, backend execution, and measurement — a design philosophy that maps directly to how modern quantum compilation pipelines are structured.
+
+Core work includes building a PennyLane-based characterization framework that evaluates parameterized quantum circuits and ansatz across six metrics including expressibility and entanglement capability. I designed a benchmarking pipeline comparing 6+ parameterized circuits across 3+ algorithms for H\u2082 and LiH molecules, producing comparative performance datasets used internally for ansatz selection.
+
+I also develop OpenQASM-level circuit transformation and analysis utilities that evaluate gate depth, gate counts, and backend-specific resource metrics across heterogeneous hardware targets including IBM, IonQ, and AWS Braket. Currently extending PennyLane core functionality to implement ADAPT-VQE with custom operator pools — working inside framework internals rather than simply consuming APIs.`,
+    tags: ['PennyLane', 'Qiskit', 'AWS Braket', 'OpenQASM', 'Python', 'ADAPT-VQE', 'Circuit Benchmarking'],
     dotClass: '',
   },
   {
-    role: 'Associate Software Engineer',
-    company: 'Amdocs Development Centre — India',
-    date: 'Jul 2021 – Jul 2023',
-    desc: 'Engineered backend services and order-management systems for major telecom clients. Built and maintained Java-based microservices interfacing with Oracle SQL databases, ensuring high-throughput transaction processing.',
-    tags: ['Java', 'Oracle SQL', 'OMS', 'Microservices'],
+    role: 'Graduate Researcher',
+    company: 'USC Nanostructures Materials & Devices Laboratory — Los Angeles, CA',
+    date: 'May 2024 – Dec 2024',
+    desc: `During my M.S., I worked in the USC Nanostructures Materials and Devices Lab on the fabrication of GaAs waveguides using Reactive Ion Etching (RIE) for Mesa-Top Quantum Dots. This role gave me hands-on experience with the physical hardware side of quantum systems — the layer beneath the algorithms. I executed DOE-driven experimental workflows and operated a full suite of cleanroom tools including plasma etchers, profilometers, optical microscopy equipment, wet benches, and fumehoods. It's a dimension of quantum engineering that very few software engineers have direct exposure to.`,
+    tags: ['RIE', 'Nanofabrication', 'Profilometry', 'Optical Microscopy', 'GaAs', 'Quantum Dots'],
     dotClass: 'timeline__dot--cyan',
   },
   {
-    role: 'Web Developer',
-    company: 'Saathi Global Ed Network',
+    role: 'Software Developer',
+    company: 'Amdocs — Gurgaon, NCR, India',
+    date: 'Jul 2021 – Jul 2023',
+    desc: `At Amdocs I delivered Java-based backend services for telecom OMS/CRM platforms supporting high-revenue enterprise deployments. I built SOAP/XML APIs and database integrations for Singtel's digital platforms, led proof-of-concept engagements directly with Singtel clients, and supported production releases including the Singtel RED launch. I also handled documentation and ran knowledge transfer sessions for my team. This role sharpened my ability to deliver in fast-paced, high-stakes environments where learning new technology stacks on the job was the norm, not the exception.`,
+    tags: ['Java', 'Oracle SQL', 'SOAP/XML', 'OMS/CRM', 'Perforce'],
+    dotClass: 'timeline__dot--cyan',
+  },
+  {
+    role: 'Web Development Intern',
+    company: 'Saathi Global Education Network — Remote',
     date: 'Jan 2021 – Jun 2021',
-    desc: 'Designed and developed a content management system using Python and Django, streamlining educational content delivery for a growing network of global partners.',
-    tags: ['Python', 'Django', 'CMS', 'HTML/CSS'],
+    desc: `Led a 3-person team building the backend framework for a startup aiming to connect schools globally. Designed and built a Django-based Content Management System with REST APIs and a Neo4j graph database backend. First real exposure to project ownership, client-facing product thinking, and leading a small engineering team.`,
+    tags: ['Python', 'Django', 'REST APIs', 'Neo4j'],
     dotClass: 'timeline__dot--cyan',
   },
 ]

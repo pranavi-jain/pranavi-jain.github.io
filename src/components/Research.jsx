@@ -21,7 +21,15 @@ export default function Research() {
               Post Quantum Digital Signature Change in IOTA to Reduce Latency in Internet of Vehicles (IoV) Environments
             </h3>
             <p className="research-card__meta">
-              2022 International Conference on IoT and Blockchain Technology (IBT) &nbsp;·&nbsp; IEEE Xplore
+              2022 International Conference on IoT and Blockchain Technology (ICIBT) &nbsp;&middot;&nbsp; IEEE Xplore
+            </p>
+            <p className="research-card__description">
+              This paper addresses a real intersection problem: how distributed ledger technology
+              (specifically IOTA) can be made suitable for time-sensitive IoV environments by
+              replacing its existing post-quantum digital signature scheme with a lower-latency
+              alternative. The work evaluates the tradeoffs in post-quantum cryptography for
+              resource-constrained, high-throughput systems — a problem space that sits at the
+              junction of quantum-resistant security, distributed systems, and networked hardware.
             </p>
             <a
               href="https://ieeexplore.ieee.org/document/9807757"

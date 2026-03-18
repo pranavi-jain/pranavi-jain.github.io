@@ -24,7 +24,7 @@ export default function Hero() {
 
           {/* LinkedIn */}
           <a
-            href="https://www.linkedin.com/in/pranavi-jain/"
+            href="https://www.linkedin.com/in/pranavi-jain-956402174/"
             target="_blank"
             rel="noopener noreferrer"
             className="hero__icon-link"
