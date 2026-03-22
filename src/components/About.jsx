@@ -21,20 +21,20 @@ export default function About() {
             </p>
             <p>
               My M.S. in <em>Quantum Information Science</em> from USC gave me a rigorous foundation
-              in quantum algorithms, error mitigation, and hardware characterization. What drives me
+              in quantum algorithms, error correction, and open quantum systems. What drives me
               is the gap between theory and execution — translating research into structured,
               reproducible, production-ready prototypes that actually run on real hardware.
             </p>
-            <p>
+            {/* <p>
               I've worked across IBM, IonQ, IQM, Rigetti, and AWS Braket backends, building
               abstraction layers that separate circuit construction, transformation, execution, and
               measurement. I extend frameworks at the internals level, not just consume APIs. And I
               bring professional software engineering discipline to everything I build: modular
               architecture, version control, structured logging, and a commitment to objectively
               verifiable scientific outputs.
-            </p>
+            </p> */}
             <p>
-              Outside of work, I'm drawn to stargazing, music, reading across science and psychology,
+              Outside of work, I'm drawn to stargazing, music, reading across science and philosophy,
               and anything that forces me to think differently about how the world works — which,
               honestly, is also why quantum computing feels like exactly the right field to be in.
             </p>

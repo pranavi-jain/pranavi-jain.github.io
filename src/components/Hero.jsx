@@ -3,7 +3,7 @@ export default function Hero() {
     <section className="hero" id="hero">
       <div className="hero__content">
         <h1 className="hero__name">Pranavi Jain</h1>
-        <p className="hero__title">Quantum Software Engineer &nbsp;|&nbsp; IEEE Researcher</p>
+        <p className="hero__title">Quantum Software Engineer &nbsp;|&nbsp; Human</p>
         <p className="hero__tagline">
           Exploring the universe at every scale — from qubits to galaxies.
         </p>
