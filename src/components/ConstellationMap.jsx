@@ -20,14 +20,16 @@ const CONSTELLATIONS = [
       { label: 'ADAPT-VQE',             x: 0.16, y: 0.32, r: 4, bridge: false },
       { label: "Grover's Algorithm",     x: 0.32, y: 0.12, r: 3.5, bridge: false },
       { label: 'Python',                 x: 0.38, y: 0.38, r: 6, bridge: true },
+      { label: 'Quantum Cryptography',   x: 0.28, y: 0.20, r: 4, bridge: true },
+      { label: 'Open Quantum Systems',   x: 0.12, y: 0.40, r: 3.5, bridge: false },
     ],
-    edges: [[0,1],[0,2],[0,3],[1,3],[2,4],[3,4],[3,12],[5,1],[5,3],[6,7],[6,8],[4,8],[9,3],[10,0],[10,3],[11,1],[9,12]],
+    edges: [[0,1],[0,2],[0,3],[1,3],[2,4],[3,4],[3,12],[5,1],[5,3],[6,7],[6,8],[4,8],[9,3],[10,0],[10,3],[11,1],[9,12],[13,5],[13,1],[4,14],[14,7]],
   },
   {
     name: 'Lab & Hardware',
     color: '#e8d5a3',
     skills: [
-      { label: 'Arduino',              x: 0.62, y: 0.12, r: 4, bridge: false },
+      { label: 'Arduino',              x: 0.62, y: 0.12, r: 4, bridge: true },
       { label: 'Raspberry Pi',         x: 0.72, y: 0.08, r: 3.5, bridge: false },
       { label: 'RIE',                  x: 0.58, y: 0.26, r: 4.5, bridge: false },
       { label: 'Profilometry',         x: 0.74, y: 0.22, r: 3.5, bridge: false },
@@ -35,8 +37,11 @@ const CONSTELLATIONS = [
       { label: 'Optical Microscopy',   x: 0.80, y: 0.32, r: 3.5, bridge: false },
       { label: 'Quantum Dots',         x: 0.68, y: 0.46, r: 4, bridge: false },
       { label: 'Linux/Unix',           x: 0.52, y: 0.42, r: 4, bridge: true },
+      { label: 'Lattice Flip & Scribe', x: 0.82, y: 0.18, r: 3.5, bridge: false },
+      { label: 'NI Multisim',          x: 0.76, y: 0.40, r: 3.5, bridge: false },
+      { label: 'Fritzing',             x: 0.84, y: 0.28, r: 3, bridge: false },
     ],
-    edges: [[0,1],[0,2],[2,3],[2,4],[3,5],[4,5],[4,6],[2,6],[7,0],[7,2]],
+    edges: [[0,1],[0,2],[2,3],[2,4],[3,5],[4,5],[4,6],[2,6],[7,0],[7,2],[8,3],[8,5],[9,5],[9,6],[10,5],[10,8],[1,8]],
   },
   {
     name: 'Code Stream',
@@ -57,8 +62,14 @@ const CONSTELLATIONS = [
       { label: 'Perforce',     x: 0.28, y: 0.82, r: 3, bridge: false },
       { label: 'MATLAB',       x: 0.76, y: 0.50, r: 3.5, bridge: false },
       { label: 'Neo4j',        x: 0.50, y: 0.90, r: 3.5, bridge: false },
+      { label: 'Jira',         x: 0.68, y: 0.84, r: 3, bridge: false },
+      { label: 'Confluence',   x: 0.78, y: 0.78, r: 3, bridge: false },
+      { label: 'HTML/CSS',     x: 0.82, y: 0.66, r: 3.5, bridge: false },
+      { label: 'JavaScript',   x: 0.86, y: 0.56, r: 3.5, bridge: false },
+      { label: 'Quantum Cryptography', x: 0.28, y: 0.20, r: 4, bridge: true },
+      { label: 'Arduino',      x: 0.62, y: 0.12, r: 4, bridge: true },
     ],
-    edges: [[0,1],[0,2],[1,3],[1,4],[2,4],[3,4],[5,0],[6,1],[7,1],[7,8],[3,9],[1,10],[2,12],[4,11],[4,14],[7,13],[9,3],[10,4]],
+    edges: [[0,1],[0,2],[1,3],[1,4],[2,4],[3,4],[5,0],[6,1],[7,1],[7,8],[3,9],[1,10],[2,12],[4,11],[4,14],[7,13],[9,3],[10,4],[15,3],[16,15],[17,18],[18,13],[7,17],[19,5],[20,7]],
   },
 ]
 
@@ -67,17 +78,17 @@ const SKILL_GROUPS = [
   {
     title: 'Quantum Array',
     cls: 'skill-chip--quantum',
-    skills: ['PennyLane', 'Qiskit', 'AWS Braket', 'Quantum Algorithms', 'Quantum Error Correction', 'OpenQASM', 'PySCF', 'OpenFermion', 'mitiq', 'Circuit Knitting', 'ADAPT-VQE', "Grover's Algorithm"],
+    skills: ['PennyLane', 'Qiskit', 'AWS Braket', 'Quantum Algorithms', 'Quantum Error Correction', 'OpenQASM', 'PySCF', 'OpenFermion', 'mitiq', 'Circuit Knitting', 'ADAPT-VQE', "Grover's Algorithm", 'Quantum Cryptography', 'Open Quantum Systems'],
   },
   {
     title: 'Lab & Hardware',
     cls: 'skill-chip--hardware',
-    skills: ['Arduino', 'Raspberry Pi', 'RIE', 'Profilometry', 'GaAs Fabrication', 'Optical Microscopy', 'Quantum Dots'],
+    skills: ['Arduino', 'Raspberry Pi', 'RIE', 'Profilometry', 'GaAs Fabrication', 'Optical Microscopy', 'Quantum Dots', 'Lattice Flip & Scribe', 'NI Multisim', 'Fritzing'],
   },
   {
     title: 'Code Stream',
     cls: 'skill-chip--code',
-    skills: ['Python', 'Java', 'C/C++', 'ARM Assembly', 'Git', 'SQL', 'MySQL', 'Django', 'SOAP/XML', 'Postman', 'Perforce', 'MATLAB', 'Neo4j', 'Linux/Unix'],
+    skills: ['Python', 'Java', 'C/C++', 'ARM Assembly', 'Git', 'SQL', 'MySQL', 'Django', 'SOAP/XML', 'Postman', 'Perforce', 'MATLAB', 'Neo4j', 'Linux/Unix', 'Jira', 'Confluence', 'HTML/CSS', 'JavaScript'],
   },
 ]
 

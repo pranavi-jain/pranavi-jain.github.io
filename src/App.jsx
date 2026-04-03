@@ -7,6 +7,7 @@ import Education from './components/Education'
 import Research from './components/Research'
 import Projects from './components/Projects'
 import Forte from './components/Forte'
+import Community from './components/Community'
 import ConstellationMap from './components/ConstellationMap'
 import Contact from './components/Contact'
 
@@ -23,6 +24,7 @@ export default function App() {
         <Research />
         <Projects />
         <Forte />
+        <Community />
         <ConstellationMap />
         <Contact />
       </div>

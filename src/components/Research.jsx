@@ -21,15 +21,32 @@ export default function Research() {
               Post Quantum Digital Signature Change in IOTA to Reduce Latency in Internet of Vehicles (IoV) Environments
             </h3>
             <p className="research-card__meta">
-              2022 International Conference on IoT and Blockchain Technology (ICIBT) &nbsp;&middot;&nbsp; IEEE Xplore
+              2022 International Conference on IoT and Blockchain Technology (ICIBT) &nbsp;&middot;&nbsp; IEEE Xplore &nbsp;&middot;&nbsp; Ranchi, India
+            </p>
+
+            <div className="research-card__nist-callout">
+              <span className="research-card__nist-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="12" y1="8" x2="12" y2="12" />
+                  <line x1="12" y1="16" x2="12.01" y2="16" />
+                </svg>
+              </span>
+              The signature scheme studied in this paper — later standardized as ML-DSA — was selected by NIST in August 2024 as one of only three post-quantum cryptography standards. An independent validation of the research direction.
+            </div>
+
+            <p className="research-card__description">
+              This paper addresses a real-world intersection problem: how IOTA, a distributed
+              ledger technology designed for IoT, can be made suitable for time-sensitive Internet
+              of Vehicles environments by replacing its post-quantum digital signature scheme with
+              a lower-latency alternative. The work evaluates tradeoffs in post-quantum cryptography
+              for resource-constrained, high-throughput systems — sitting at the junction of
+              quantum-resistant security, distributed systems, and networked hardware.
             </p>
             <p className="research-card__description">
-              This paper addresses a real intersection problem: how distributed ledger technology
-              (specifically IOTA) can be made suitable for time-sensitive IoV environments by
-              replacing its existing post-quantum digital signature scheme with a lower-latency
-              alternative. The work evaluates the tradeoffs in post-quantum cryptography for
-              resource-constrained, high-throughput systems — a problem space that sits at the
-              junction of quantum-resistant security, distributed systems, and networked hardware.
+              In August 2024, NIST independently selected ML-DSA (the renamed scheme studied in
+              this paper) as one of three official post-quantum cryptography standards — a
+              retroactive validation of the research direction taken in this work.
             </p>
             <a
               href="https://ieeexplore.ieee.org/document/9807757"

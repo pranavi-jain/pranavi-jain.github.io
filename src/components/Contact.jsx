@@ -41,8 +41,12 @@ export default function Contact() {
           </div>
         </ScrollReveal>
 
+        <p className="contact-languages">
+          Languages: English (fluent) &middot; Hindi (native) &middot; Punjabi (conversational)
+        </p>
+
         <footer style={{
-          marginTop: '5rem',
+          marginTop: '3rem',
           textAlign: 'center',
           fontFamily: 'var(--font-mono)',
           fontSize: '0.75rem',

@@ -33,6 +33,14 @@ const PROJECTS = [
     tags: ['Fluxonium', 'Quantum Transduction', 'Quantum Networks', 'Piezoelectric'],
     link: null,
   },
+  {
+    title: 'Detection of Learner Concentration in Distance Learning',
+    desc: 'Our final-year capstone tackled a problem that became acutely relevant during the pandemic: how do you know if an online learner is actually engaged? The project implemented ML models and neural networks to detect and quantify a student\'s concentration levels in real time, presenting statistical output to instructors.\n\nMy specific contribution was the hardware integration layer — connecting the webcam input pipeline to the ML model, handling the electronics side of real-time video capture and preprocessing. Working at the boundary between hardware input and software inference is something I\'ve returned to repeatedly since, in different forms.',
+    badge: 'B.E. Capstone',
+    badgeClass: 'project-card__badge--published',
+    tags: ['Machine Learning', 'Neural Networks', 'IoT', 'Python', 'Webcam Integration', 'EdTech'],
+    link: null,
+  },
 ]
 
 export default function Projects() {
