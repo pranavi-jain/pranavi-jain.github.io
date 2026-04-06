@@ -12,33 +12,30 @@ export default function About() {
         <ScrollReveal>
           <div className="about__text">
             <p>
-              I'm a <strong>Quantum Software Engineer</strong> working at the intersection of
-              quantum algorithm research, framework engineering, and hardware experimentation.
-              My path here has been deliberately layered — from fabricating nanoscale semiconductor
-              devices in a USC cleanroom, to building production-grade Python frameworks for hybrid
-              quantum-classical experiments, to publishing IEEE research whose core subject was later
-              selected as a NIST post-quantum cryptography standard.
+              I'm a <strong>Quantum Software Engineer</strong> working at the intersection of quantum
+              circuit design, algorithm development, and framework-level software engineering. My path
+              here has been deliberately interdisciplinary — from fabricating nanoscale semiconductor
+              devices in a cleanroom at USC, to building production-grade Python frameworks for hybrid
+              quantum-classical experiments at NeoQuortex, to publishing IEEE research on post-quantum
+              cryptography in distributed systems.
             </p>
             <p>
-              My M.S. in <em>Quantum Information Science</em> from USC gave me rigorous grounding
-              across quantum mechanics, quantum error correction, open quantum systems, and quantum
-              cryptography. What drives me is the space between theory and execution — translating
-              research into structured, reproducible, production-ready systems that run on real
-              hardware. I've worked across IBM, IonQ, IQM, Rigetti, and AWS Braket, and I extend
-              frameworks at the internals level rather than simply consuming APIs.
+              My M.S. in <em>Quantum Information Science</em> from USC provided me with a rigorous
+              grounding in quantum mechanics, quantum error correction, open quantum systems, and
+              quantum cryptography. I'm drawn to mathematics and quantum mechanics not just as tools but
+              as ways of thinking. What drives me is the space between theory and execution —
+              translating research into structured, reproducible, production-ready systems that run on
+              real hardware.
             </p>
             <p>
-              Outside the lab and the terminal, I've spent time teaching — designing curriculum on
-              semiconductors and quantum computing for high school students at USC Viterbi's K-12
-              STEM Center, and once hosting 300 school kids at an astronomy night as Joint Secretary
-              of Thapar's Amateur Astronomers Society. That thread — making hard things
-              understandable, and staying genuinely curious about the universe — is something I
-              carry into everything I build.
+              Outside the lab and the terminal, I've spent time designing curriculum on semiconductor
+              and quantum computing for high school students and teaching at USC Viterbi's K-12 STEM
+              Center. This thread — making hard things understandable — is something I carry into
+              everything I build
             </p>
             <p>
-              I'm drawn to mathematics and quantum mechanics not just as tools but as ways of
-              thinking. When I'm not working, I'm usually stargazing, reading across science
-              and psychology, or finding music that matches whatever the sky looks like that night.
+              When I'm not working, I'm usually stargazing, reading across science and philosophy, or
+              finding music that matches whatever the sky looks like that night.
             </p>
           </div>
         </ScrollReveal>

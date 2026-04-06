@@ -15,6 +15,13 @@ const FEATURED = [
     location: null,
     desc: 'Initiated and led the Patiala city chapter of GirlScript Foundation, organizing tech events at the city level to encourage women\'s participation in engineering and technology. Getting more people — especially women — into technical fields is something I care about and tried to act on, not just endorse.',
   },
+  {
+    org: 'Saturnalia — Annual Technical Festival, Thapar Institute',
+    role: 'Technical Events Head',
+    date: 'Aug 2019 – Nov 2019',
+    location: null,
+    desc: 'Saturnalia is Thapar\'s flagship pan-India college fest. As Technical Events Head, I led the end-to-end planning and execution of all tech competitions — robotics (maze solvers, line followers), RC planes, hackathons, and more — from event design through the day of. The organizational side was the real challenge: coordinating a team of 5 co-leads and 40 junior volunteers across months of preparation, aligning on formats, judging criteria, logistics, and contingencies — all while managing my own coursework. On the day, we ran simultaneous competitions drawing ~15 participants per event and an overnight hackathon with around 200 participants. What I took away: how to delegate without micromanaging, how to hold a large team accountable to a shared deadline, and how quickly things go sideways when communication breaks down — and how to fix them in real time.',
+  },
 ]
 
 const COMPACT = [

@@ -20,7 +20,7 @@ const PROJECTS = [
   {
     title: 'Two-Qubit Entanglement Dynamics on IBM Quantum Systems',
     desc: 'An experimental study of entanglement dynamics on real IBM quantum processors. The project simulates the Nakajima-Zwanzig and Time-Convolutionless (TCL) master equations to characterize how two-qubit entanglement evolves under realistic decoherence conditions — bridging open quantum systems theory with experimental hardware behavior.',
-    badge: 'Quantum Hardware',
+    badge: 'Open Quantum Systems',
     badgeClass: 'project-card__badge--published',
     tags: ['IBM Quantum', 'Qiskit', 'Entanglement', 'Open Quantum Systems', 'TCL'],
     link: null,
