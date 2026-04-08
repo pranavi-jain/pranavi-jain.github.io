@@ -53,7 +53,7 @@ export default function Contact() {
           color: 'var(--text-dim)',
           letterSpacing: '0.08em',
         }}>
-          &copy; {new Date().getFullYear()} Pranavi Jain &middot; Built with React
+          &copy; {new Date().getFullYear()} Pranavi Jain &middot; Built with React &amp; Claude Code ✦
         </footer>
       </div>
     </section>
