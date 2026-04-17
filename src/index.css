@@ -252,7 +252,7 @@ ul {
 
 .navbar__links {
   display: flex;
-  gap: 2rem;
+  gap: 1.4rem;
   align-items: center;
 }
 
@@ -262,6 +262,7 @@ ul {
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.12em;
+  white-space: nowrap;
   position: relative;
   transition: color .25s;
 }

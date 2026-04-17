@@ -16,32 +16,32 @@ const CONSTELLATIONS = [
     color: C_CYAN,
     skills: [
       /* tools — solid */
-      { label: 'PennyLane', x: 0.07, y: 0.10, r: 5 },
-      { label: 'Qiskit', x: 0.14, y: 0.06, r: 5 },
-      { label: 'AWS Braket', x: 0.03, y: 0.20, r: 4 },
-      { label: 'PySCF', x: 0.03, y: 0.50, r: 3.5 },
-      { label: 'OpenFermion', x: 0.11, y: 0.54, r: 3.5 },
-      { label: 'mitiq', x: 0.34, y: 0.38, r: 3.5 },
-      { label: 'Circuit Knitting', x: 0.28, y: 0.30, r: 3.5 },
-      { label: 'QuTiP', x: 0.48, y: 0.32, r: 3.5 },
+      { label: 'PennyLane', x: 0.07, y: 0.14, r: 5 },
+      { label: 'Qiskit', x: 0.14, y: 0.10, r: 5 },
+      { label: 'AWS Braket', x: 0.05, y: 0.25, r: 4 },
+      { label: 'PySCF', x: 0.03, y: 0.54, r: 3.5 },
+      { label: 'OpenFermion', x: 0.11, y: 0.58, r: 3.5 },
+      { label: 'mitiq', x: 0.34, y: 0.42, r: 3.5 },
+      { label: 'Circuit Knitting', x: 0.28, y: 0.34, r: 3.5 },
+      { label: 'QuTiP', x: 0.48, y: 0.36, r: 3.5 },
       /* concepts — outline */
-      { label: 'Quantum Algorithms', x: 0.19, y: 0.14, r: 5, theory: true },
-      { label: "Grover's Algorithm", x: 0.30, y: 0.10, r: 3.5, theory: true },
-      { label: 'QPE', x: 0.20, y: 0.04, r: 3.5, theory: true },
-      { label: 'QAOA', x: 0.26, y: 0.06, r: 3.5, theory: true },
-      { label: 'Hybrid Algorithms', x: 0.13, y: 0.28, r: 5, theory: true },
-      { label: 'VQE', x: 0.05, y: 0.30, r: 3.5, theory: true },
-      { label: 'vITE', x: 0.09, y: 0.36, r: 3.5, theory: true },
-      { label: 'ADAPT-VQE', x: 0.15, y: 0.40, r: 3.5, theory: true },
-      { label: 'Hardware-Efficient Ansatz', x: 0.21, y: 0.36, r: 3.5, theory: true },
-      { label: 'Quantum Chemistry', x: 0.06, y: 0.46, r: 4, theory: true },
-      { label: 'Quantum Circuit Optimization', x: 0.25, y: 0.24, r: 3.5, theory: true },
-      { label: 'Open Quantum Systems', x: 0.43, y: 0.27, r: 4, theory: true },
-      { label: 'Quantum Error Correction', x: 0.38, y: 0.34, r: 4, theory: true },
-      { label: 'Cirq', x: 0.12, y: 0.16, r: 4.5 },
+      { label: 'Quantum Algorithms', x: 0.19, y: 0.18, r: 5, theory: true },
+      { label: "Grover's Algorithm", x: 0.30, y: 0.14, r: 3.5, theory: true },
+      { label: 'QPE', x: 0.20, y: 0.08, r: 3.5, theory: true },
+      { label: 'QAOA', x: 0.26, y: 0.10, r: 3.5, theory: true },
+      { label: 'Hybrid Algorithms', x: 0.13, y: 0.32, r: 5, theory: true },
+      { label: 'VQE', x: 0.05, y: 0.34, r: 3.5, theory: true },
+      { label: 'vITE', x: 0.09, y: 0.40, r: 3.5, theory: true },
+      { label: 'ADAPT-VQE', x: 0.15, y: 0.44, r: 3.5, theory: true },
+      { label: 'Hardware-Efficient Ansatz', x: 0.21, y: 0.40, r: 3.5, theory: true },
+      { label: 'Quantum Chemistry', x: 0.06, y: 0.50, r: 4, theory: true },
+      { label: 'Quantum Circuit Optimization', x: 0.25, y: 0.28, r: 3.5, theory: true },
+      { label: 'Open Quantum Systems', x: 0.43, y: 0.31, r: 4, theory: true },
+      { label: 'Quantum Error Correction', x: 0.38, y: 0.38, r: 4, theory: true },
+      { label: 'Cirq', x: 0.12, y: 0.20, r: 4.5 },
       /* bridges */
       { label: 'Python', x: 0.36, y: 0.50, r: 6, bridge: true },
-      { label: 'OpenQASM', x: 0.33, y: 0.18, r: 4, bridge: true },
+      { label: 'OpenQASM', x: 0.33, y: 0.20, r: 4, bridge: true },
       { label: 'Quantum Cryptography', x: 0.60, y: 0.27, r: 4, bridge: true, theory: true },
       { label: 'Quantum Dots', x: 0.66, y: 0.22, r: 4, bridge: true, theory: true },
     ],
@@ -66,8 +66,10 @@ const CONSTELLATIONS = [
       [20, 5],
       /* QEC → OQS */
       [20, 19],
-      /* Python → PySCF, PennyLane, Qiskit, mitiq, QuTiP */
-      [22, 3], [22, 0], [22, 1], [22, 5], [22, 7],
+      /* Python → PySCF, PennyLane, Qiskit, mitiq, QuTiP, Cirq, AWS Braket */
+      [22, 3], [22, 0], [22, 1], [22, 5], [22, 7], [22, 21], [22, 2],
+      /* HEA → Circuit Knitting */
+      [16, 6],
     ],
   },
   /* ─── MATHEMATICAL FOUNDATIONS — above QM anchor ─── */
@@ -89,30 +91,30 @@ const CONSTELLATIONS = [
     name: 'Code Stream',
     color: C_ROSE,
     skills: [
-      { label: 'Java', x: 0.42, y: 0.64, r: 4.5 },
-      { label: 'Git', x: 0.34, y: 0.72, r: 4 },
-      { label: 'GitHub', x: 0.38, y: 0.78, r: 3.5 },
+      { label: 'Java', x: 0.47, y: 0.54, r: 4.5 },
+      { label: 'Git', x: 0.56, y: 0.62, r: 4 },
+      { label: 'GitHub', x: 0.63, y: 0.61, r: 3.5 },
       { label: 'SQL', x: 0.50, y: 0.74, r: 4 },
       { label: 'MySQL', x: 0.56, y: 0.80, r: 3.5 },
-      { label: 'Django', x: 0.44, y: 0.84, r: 4 },
-      { label: 'REST', x: 0.38, y: 0.88, r: 3.5 },
-      { label: 'SOAP/XML', x: 0.46, y: 0.88, r: 3.5 },
-      { label: 'Postman', x: 0.46, y: 0.94, r: 3 },
-      { label: 'PL/SQL', x: 0.60, y: 0.86, r: 3 },
-      { label: 'C/C++', x: 0.56, y: 0.62, r: 4 },
-      { label: 'ARM Assembly', x: 0.62, y: 0.68, r: 3.5 },
-      { label: 'HTML/CSS', x: 0.54, y: 0.80, r: 3.5 },
-      { label: 'JavaScript', x: 0.60, y: 0.74, r: 3.5 },
-      { label: 'MATLAB', x: 0.30, y: 0.66, r: 3.5 },
-      { label: 'Jira', x: 0.58, y: 0.92, r: 3 },
-      { label: 'Confluence', x: 0.64, y: 0.90, r: 3 },
-      { label: 'Scrum', x: 0.62, y: 0.84, r: 3, theory: true },
-      { label: 'Perforce', x: 0.30, y: 0.80, r: 3 },
+      { label: 'Django', x: 0.38, y: 0.63, r: 4 },
+      { label: 'REST', x: 0.33, y: 0.72, r: 3.5 },
+      { label: 'SOAP/XML', x: 0.44, y: 0.69, r: 3.5 },
+      { label: 'Postman', x: 0.39, y: 0.72, r: 3 },
+      { label: 'PL/SQL', x: 0.48, y: 0.80, r: 3 },
+      { label: 'C/C++', x: 0.60, y: 0.55, r: 4 },
+      { label: 'ARM Assembly', x: 0.55, y: 0.50, r: 3.5 },
+      { label: 'HTML/CSS', x: 0.38, y: 0.78, r: 3.5 },
+      { label: 'JavaScript', x: 0.33, y: 0.82, r: 3.5 },
+      { label: 'MATLAB', x: 0.31, y: 0.61, r: 3.5 },
+      { label: 'Jira', x: 0.64, y: 0.78, r: 3 },
+      { label: 'Confluence', x: 0.70, y: 0.74, r: 3 },
+      { label: 'Scrum', x: 0.61, y: 0.72, r: 3, theory: true },
+      { label: 'Perforce', x: 0.61, y: 0.65, r: 3 },
       /* bridges */
       { label: 'Python', x: 0.36, y: 0.50, r: 6, bridge: true },
-      { label: 'OpenQASM', x: 0.33, y: 0.18, r: 4, bridge: true },
-      { label: 'Linux/Unix', x: 0.68, y: 0.48, r: 4, bridge: true },
-      { label: 'Arduino', x: 0.74, y: 0.44, r: 4, bridge: true },
+      { label: 'OpenQASM', x: 0.33, y: 0.20, r: 4, bridge: true },
+      { label: 'Linux/Unix', x: 0.68, y: 0.50, r: 4, bridge: true },
+      { label: 'Arduino', x: 0.75, y: 0.46, r: 4, bridge: true },
       { label: 'Quantum Cryptography', x: 0.60, y: 0.27, r: 4, bridge: true, theory: true },
       { label: 'Post-Quantum Cryptography', x: 0.56, y: 0.37, r: 3.5, bridge: true, theory: true },
     ],
@@ -131,12 +133,14 @@ const CONSTELLATIONS = [
       [10, 11],
       [11, 20],
       [12, 13],
-      [15, 16], [15, 17], [16, 17],
+      [15, 17], [16, 17],
       [21, 10], [22, 10],
       [23, 24],
       [0, 3],
       [1, 0], [1, 10],           // Git → Java, Git → C/C++
       [12, 6], [12, 7],          // HTML/CSS → REST, HTML/CSS → SOAP/XML
+      [19, 10],                   // Python → C/C++
+      [0, 17],                    // Java → Scrum
     ],
   },
   /* ─── ELECTRONICS — lower-right ─── */
@@ -144,21 +148,26 @@ const CONSTELLATIONS = [
     name: 'Electronics',
     color: C_GOLD,
     skills: [
-      { label: 'Raspberry Pi', x: 0.80, y: 0.48, r: 3.5 },
-      { label: 'Sensors', x: 0.84, y: 0.56, r: 3.5 },
-      { label: 'NI Multisim', x: 0.88, y: 0.48, r: 3.5 },
-      { label: 'Fritzing', x: 0.86, y: 0.62, r: 3 },
+      { label: 'Semiconductors', x: 0.82, y: 0.43, r: 5, theory: true },
+      { label: 'Raspberry Pi', x: 0.77, y: 0.56, r: 3.5 },
+      { label: 'Sensors', x: 0.88, y: 0.60, r: 3.5 },
+      { label: 'NI Multisim', x: 0.90, y: 0.48, r: 3.5 },
+      { label: 'Fritzing', x: 0.92, y: 0.56, r: 3 },
       /* bridges */
-      { label: 'Arduino', x: 0.74, y: 0.44, r: 4, bridge: true },
-      { label: 'Linux/Unix', x: 0.68, y: 0.48, r: 4, bridge: true },
+      { label: 'Arduino', x: 0.75, y: 0.46, r: 4, bridge: true },
+      { label: 'Linux/Unix', x: 0.68, y: 0.50, r: 4, bridge: true },
+      { label: 'GaAs Waveguides', x: 0.72, y: 0.18, r: 4.5, bridge: true },
     ],
-    //  0 RPi  1 Sensors  2 NI Multisim  3 Fritzing  4 Arduino  5 Linux/Unix
+    //  0 Semiconductors  1 RPi  2 Sensors  3 NI Multisim  4 Fritzing
+    //  5 Arduino  6 Linux/Unix  7 GaAs Waveguides
     edges: [
-      [4, 0], [4, 1],
-      [0, 1],
-      [2, 3],
-      [3, 4],
-      [5, 4],
+      [0, 5], [0, 1], [0, 3], [0, 4],   // Semiconductors → Arduino, RPi, NI Multisim, Fritzing
+      [5, 1], [5, 2],                     // Arduino → RPi, Sensors
+      [1, 2],                             // RPi → Sensors
+      [4, 5],                             // Fritzing → Arduino
+      [6, 5],                             // Linux/Unix → Arduino
+      [6, 1],                             // Linux/Unix → Raspberry Pi
+      [0, 7],                             // Semiconductors → GaAs Waveguides
     ],
   },
   /* ─── CLEANROOM & FABRICATION — upper-right ─── */
@@ -171,16 +180,21 @@ const CONSTELLATIONS = [
       { label: 'Profilometry', x: 0.80, y: 0.24, r: 3.5 },
       { label: 'Lattice Flip & Scribe', x: 0.76, y: 0.06, r: 3.5 },
       { label: 'Optical Microscopy', x: 0.84, y: 0.16, r: 3.5 },
+      { label: 'Characterization', x: 0.78, y: 0.31, r: 4, theory: true },
+      { label: 'Design-of-Experiments', x: 0.85, y: 0.28, r: 3.5, theory: true },
       /* bridge */
       { label: 'Quantum Dots', x: 0.66, y: 0.22, r: 4, bridge: true, theory: true },
     ],
-    //  0 GaAs  1 RIE  2 Profilometry  3 Lattice  4 Optical Microscopy  5 QDots
+    //  0 GaAs  1 RIE  2 Profilometry  3 Lattice  4 Optical Microscopy
+    //  5 Characterization  6 Design-of-Experiments  7 QDots
     edges: [
-      [5, 0],
+      [7, 0],
       [0, 1],
       [0, 2],
       [0, 3],
       [4, 2],
+      [0, 5],
+      [5, 6],
     ],
   },
 ]
@@ -226,12 +240,12 @@ const SKILL_GROUPS = [
   {
     title: 'Electronics',
     cls: 'skill-chip--hardware',
-    skills: ['Arduino', 'Raspberry Pi', 'Sensors', 'NI Multisim', 'Fritzing'],
+    skills: ['Semiconductors', 'Arduino', 'Raspberry Pi', 'Sensors', 'NI Multisim', 'Fritzing'],
   },
   {
     title: 'Cleanroom & Fabrication',
     cls: 'skill-chip--cleanroom',
-    skills: ['GaAs Waveguides', 'RIE', 'Profilometry', 'Lattice Flip & Scribe', 'Optical Microscopy', 'Quantum Dots'],
+    skills: ['GaAs Waveguides', 'RIE', 'Profilometry', 'Lattice Flip & Scribe', 'Optical Microscopy', 'Characterization', 'Design-of-Experiments', 'Quantum Dots'],
   },
 ]
 
@@ -334,7 +348,7 @@ export default function ConstellationMap() {
         const skills = constellation.skills.filter(s => !s.bridge)
         if (skills.length === 0) continue
         const avgX = skills.reduce((s, sk) => s + sk.x, 0) / skills.length * w
-        const minY = Math.min(...skills.map(sk => sk.y)) * h
+        const minY = Math.max(30, Math.min(...skills.map(sk => sk.y)) * h)
         ctx.save()
         ctx.font = '700 13px "Exo 2", sans-serif'
         ctx.fillStyle = constellation.color
